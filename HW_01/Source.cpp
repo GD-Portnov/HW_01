@@ -27,7 +27,7 @@ int main()
 	cin >> b;
 	c = (a + b) / 2;
 	cout << "(A + B)/2 = " << c<<"\n";
-
+	//test
 	cout << "Enter Amount of Grivna:\n";
 	cin >> a;
 	b = a*rur;
