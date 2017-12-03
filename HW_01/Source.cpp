@@ -34,6 +34,7 @@ int main()
 	c = a*eur;
 	d = a*usd;
 	cout << "RUR=" << b << "\nEUR=" << c << "\nUSD=" << d<<"\n";
+	//test2
 
 	cout << "Enter Amount of Grivna:\n";
 	cin >> a;
