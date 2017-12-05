@@ -20,7 +20,9 @@ int main()
 	cout << "1. - A + B =\n";
 	cout << "2. - (A + B)/2 =\n";
 	cout << "3. - Quotation of UAH in RUR,EUR,USD\n";
-	cout << "4. -\n";
+	cout << "4. - Shakespeare's Main Question\n";
+	cout << "5. - Enter number to calculate the square:\n";
+	cout << "6. - Sum of A,B,C and Multiplication of A,B,C\n";
 	cin >> number;
 
 	switch (number)
@@ -49,6 +51,28 @@ int main()
 		d = a*usd;
 		cout << "RUR=" << b << "\nEUR=" << c << "\nUSD=" << d << "\n";
 		break;
+
+	case 4:
+		cout << "\"To be or not to be\"\n\\Shakespeare\\\n";
+		break;
+
+	case 5:
+		cout << "Enter number:";
+		cin >> a;
+		cout << pow(a, 2) << "\n";
+		break;
+
+	case 6:
+		cout << "Enter A:\n";
+		cin >> a;
+		cout << "Enter B:\n";
+		cin >> b;
+		cout << "Enter C:\n";
+		cin >> c;
+		cout << "A + B + C = " << a + b + c << "\n";
+		cout << "A * B * C = " << a * b * c << "\n";
+		break;
+		
 	}
 
 	
