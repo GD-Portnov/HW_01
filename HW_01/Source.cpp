@@ -23,6 +23,7 @@ int main()
 	cout << "4. - Shakespeare's Main Question\n";
 	cout << "5. - Enter number to calculate the square:\n";
 	cout << "6. - Sum of A,B,C and Multiplication of A,B,C\n";
+	cout << "7. - Check if number is Odd or Even.\n";
 	cin >> number;
 
 	switch (number)
@@ -72,12 +73,24 @@ int main()
 		cout << "A + B + C = " << a + b + c << "\n";
 		cout << "A * B * C = " << a * b * c << "\n";
 		break;
+
+	case 7:
+		cout << "Enter number:\n";
+		cin >> a ;
+		if ((int)a % 2) > 0;
+		{
+			cout << a << "is odd\n";
+		};
+		else
+		{
+			cout << a << "is even\n";
+		}
 		
 	}
 
-	
+	system("pause");
 
-	cin >> a;
+	
 
 	return 0;
 
