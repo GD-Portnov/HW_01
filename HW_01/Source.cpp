@@ -8,7 +8,7 @@ int number;
 float a = 0;
 float b = 0;
 float c = 0;
-float d = 0;
+int d = 0;
 
 float rur = 2.15;
 float eur = 0.031;
@@ -47,9 +47,9 @@ int main()
 	case 3:
 		cout << "Enter Amount of Grivna:\n";
 		cin >> a;
-		b = a*rur;
-		c = a*eur;
-		d = a*usd;
+		rur= rur*a;
+		eur=eur*a;
+		usd=usd*a;
 		cout << "RUR=" << b << "\nEUR=" << c << "\nUSD=" << d << "\n";
 		break;
 
@@ -76,14 +76,15 @@ int main()
 
 	case 7:
 		cout << "Enter number:\n";
-		cin >> a ;
-		if ((int)a % 2) > 0;
+		cin >> d ;
+
+		if ((d % 2) > 0)
 		{
-			cout << a << "is odd\n";
-		};
+			cout << d << " is odd\n";
+		}
 		else
 		{
-			cout << a << "is even\n";
+			cout << d << " is even\n";
 		}
 		
 	}
