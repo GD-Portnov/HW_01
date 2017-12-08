@@ -65,26 +65,33 @@ int main()
 
 	case 6:
 		cout << "Enter A:\n";
-		cin >> a;
+		cin >> float (a);
 		cout << "Enter B:\n";
-		cin >> b;
+		cin >> float (b);
 		cout << "Enter C:\n";
-		cin >> c;
+		cin >> float (c);
 		cout << "A + B + C = " << a + b + c << "\n";
 		cout << "A * B * C = " << a * b * c << "\n";
 		break;
 
 	case 7:
 		cout << "Enter number:\n";
-		cin >> d ;
+		cin >> a ;
 
-		if ((d % 2) > 0)
+		if ((int(a) % 2) > 0)
 		{
-			cout << d << " is odd\n";
+			cout << a << " is odd\n";
 		}
 		else
 		{
-			cout << d << " is even\n";
+			cout << a << " is even\n";
+		}
+
+	case 8:
+		cout << "Enter number 1-99:\n";
+		cin >> a;
+		if (a < 10){
+			cout << a << "";
 		}
 		
 	}
