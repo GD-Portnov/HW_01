@@ -24,6 +24,9 @@ int main()
 	cout << "5. - Enter number to calculate the square:\n";
 	cout << "6. - Sum of A,B,C and Multiplication of A,B,C\n";
 	cout << "7. - Check if number is Odd or Even.\n";
+	cout << "8. - Digits in number. Sum and Multiplication of digits\n";
+	cout << "9. - Inch 2 cm Converter\n";
+	cout << "10. - Millionaire\n";
 	cin >> number;
 
 	switch (number)
@@ -91,9 +94,50 @@ int main()
 		cout << "Enter number 1-99:\n";
 		cin >> a;
 		if (a < 10){
-			cout << a << "";
+			cout << a << "Number of digits: 1";
 		}
-		
+		else {
+			if (a <= 99) {
+				b = int(a) / 10;
+				c = a - b * 10;
+				cout << "Digits are: " << b << " and " << c << "\nSum = " << b + c << "\nMultiplication = " << b*c << "\n";
+			}
+			else {
+				cout << "Wrong number [1..99]\n";
+			}
+		}
+	
+	case 9:
+		cout << "Inch <----> cm Converter. Choose source dimension:\n1. - Inch.\n2. - cm.\n";
+		cin >> a;
+		switch (int(a)) {
+		case 1:
+			cout << "Enter lenght in Inches:";
+			cin >> b;
+			cout << "Lenght equal: " << b*2.54 << " cm.\n";
+			break;
+		case 2:
+			cout << "Enter lenght in cm:";
+			cin >> b;
+			cout << "Lenght equal: " << b / 2.54 << " Inch.\n";
+			break;
+		}
+	case 10:
+	cout << "The Ultimate Question of Life, the Universe, and Everything?\n";
+	cout << "A - Love\t\t\t C - 42\nB - 3,14\t\t\t D - No answer\n";
+	char f;
+	cin >> f;
+	if ((f == 'C') || (f == 'c')) {
+	/*cin >> a;
+	a = char(a);
+	cout << a;
+	if ((a == 'C') || (a == 'c')) {*/
+		cout << "You are correct!!! Congratilations!!!\n";
+			}
+	else {
+		cout << "Unfortunately you've lost =(\n";
+	}
+
 	}
 
 	system("pause");
