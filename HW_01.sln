@@ -19,8 +19,8 @@ Global
 		{AEC4B0C9-74BB-47E5-8737-ACB930DEEBB8}.Debug|x86.Build.0 = Debug|Win32
 		{AEC4B0C9-74BB-47E5-8737-ACB930DEEBB8}.Release|x64.ActiveCfg = Release|x64
 		{AEC4B0C9-74BB-47E5-8737-ACB930DEEBB8}.Release|x64.Build.0 = Release|x64
-		{AEC4B0C9-74BB-47E5-8737-ACB930DEEBB8}.Release|x86.ActiveCfg = Release|Win32
-		{AEC4B0C9-74BB-47E5-8737-ACB930DEEBB8}.Release|x86.Build.0 = Release|Win32
+		{AEC4B0C9-74BB-47E5-8737-ACB930DEEBB8}.Release|x86.ActiveCfg = Debug|Win32
+		{AEC4B0C9-74BB-47E5-8737-ACB930DEEBB8}.Release|x86.Build.0 = Debug|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
